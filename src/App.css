@@ -1,10 +1,140 @@
 .App {
   text-align: center;
+  background-color: #48b3dd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #eaf7f5;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+#titulo {
+  font-size: 24pt;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  text-shadow: 2px 4px 2px black;
+}
+
+#subtitulo{
+  font-size: 18pt;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  text-shadow: 2px 4px 2px black;
+
+}
+
+#visor1, #visor2 {
+  width: 90%;
+  height: 75px;
+  border: black 3px solid;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+#visor1 {
+  font-size: 20pt;
+  color: rgb(2, 196, 255);
+}
+
+#visor2 {
+  font-size: 15pt;
+}
+
+#visor3 {
+  font-size: 20pt;
+  font-weight: bold;
+  font-family: 'Comic Neue', sans-serif;
+  margin-top: 20px;
+}
+
+#botaoA, #botaoB, #botaoC, #botaoD {
+  width: 40%;
+  height: 75px;
+  margin: 10px 5%;
+  border: none;
+  border-radius: 10px;
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Fredoka One', sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#botaoA {
+  background-color: red;
+}
+
+#botaoB {
+  background-color: yellow;
+  color: black;
+}
+
+#botaoC {
+  background-color: blue;
+}
+
+#botaoD {
+  background-color: green;
+}
+
+#botaoA:hover, #botaoB:hover, #botaoC:hover, #botaoD:hover {
+  filter: brightness(85%);
+}
+
+#botaoStart {
+  width: 90%;
+  height: 50px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #cecece;
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: 'Fredoka One', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#botaoStart:hover {
+  background-color: #03ee49;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 60vmin;
+  height: auto;
+  z-index: 1000;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +143,11 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-planets {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 55vmin;
+  height: 25vmin;
+  z-index: 1000;
 }

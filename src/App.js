@@ -1,22 +1,19 @@
-import logo from './logo.svg';
+import logo from './assets/disney.png'
 import './App.css';
+import planet from './assets/planet.png';
+import Start from './Start';
 
 function App() {
   return (
     <div className="App">
+      <h1 id='titulo'>PENSE BEM</h1>
+      <img src={planet} className="App-planets" alt="planets" />
+      <img src={logo} className="App-logo" alt="logo" />
+      <p id='subtitulo'>Escolha o programa definido no livro e responda as perguntas</p>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <form>
+          <Start/>  
+        </form>
       </header>
     </div>
   );
