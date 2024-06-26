@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 const gabaritos = {
-  '141': ['B', 'A', 'A', 'D', 'C', 'B', 'A', 'D', 'C', 'B', 'A', 'D', 'C', 'B', 'A', 'D', 'C', 'B', 'A', 'D', 'C', 'B', 'A', 'D', 'C', 'B', 'A', 'D', 'C', 'B'],
-  '142': ['B', 'D', 'A', 'A', 'D', 'B', 'D', 'A', 'A', 'D', 'B', 'D', 'A', 'A', 'D', 'B', 'D', 'A', 'A', 'D', 'B', 'D', 'A', 'A', 'D', 'B', 'D', 'A', 'A', 'D'],
-  // Adicione os outros gabaritos (143, 144, 145, 146) aqui
-};
+  '141': ['B','C','D','D','X','D','A','D','C','B','D','A','A','D','C','A','C','C','B','D','A','A','A','B','D','A','C','A','D','D'],
+  '142': ['B','D','D','D','B','D','A','A','D','A','B','A','C','A','B','C','A','A','B','A','D','B','B','B','C','D','C','D','D','D'],
+  '143': ['A','C','A','A','B','C','A','A','B','A','D','B','B','C','C','B','A','D','B','A','D','B','B','D','C','C','D','B','A','D'],
+  '144': ['B','D','D','B','B','D','C','A','A','D','A','D','B','A','D','C','D','D','C','C','B','D','A','A','C','D','B','B','D','D'],
+  '145': ['B','B','D','A','B','D','A','B','C','C','A','B','C','C','D','D','C','B','B','B','A','C','A','D','D','D','C','D','C','A']
+}
 
 function PenseBem() {
   const [programa, setPrograma] = useState('');
